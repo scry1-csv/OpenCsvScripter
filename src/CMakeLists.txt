@@ -1,4 +1,4 @@
-project(OpenFunscripter)
+project(OpenCsvScripter)
 
 set(OPEN_FUNSCRIPTER_SOURCES
   "main.cpp"
