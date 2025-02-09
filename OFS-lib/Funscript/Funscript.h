@@ -80,6 +80,11 @@ public:
 		int64_t duration = 0;
 	};
 
+	struct UfoAction {
+		uint8_t direction;
+        uint8_t power;
+	};
+
 	template<typename S>
 	void serialize(S& s)
 	{
@@ -103,6 +108,14 @@ private:
 	FunscriptData data;
 
 	void checkForInvalidatedActions() noexcept;
+
+	static inline UfoAction convertToUfoAction(float pos) noexcept
+	{
+        float a = (pos - 50) * 2;
+        uint8_t direction = a > 0 ? 1 : 0;
+        uint8_t power = (uint8_t)(std::abs(a));
+		return UfoAction{ direction, power };
+	}
 
 	inline FunscriptAction* getAction(FunscriptAction action) noexcept
 	{
@@ -191,6 +204,11 @@ public:
 
 	bool Enabled = true;
 	std::unique_ptr<FunscriptUndoSystem> undoSystem;
+
+	std::string ConvertToCSV() noexcept;
+        std::string RelativePathWithReplaceExt(std::string ext) const noexcept;
+
+	static std::string ConvertToUfoTwCsv(const FunscriptData& dataL, const FunscriptData& dataR) noexcept;
 
 	void UpdateRelativePath(const std::string& path) noexcept;
 	inline void ClearUnsavedEdits() noexcept { unsavedEdits = false;	}
