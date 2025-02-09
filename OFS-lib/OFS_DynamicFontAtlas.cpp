@@ -53,6 +53,9 @@ OFS_DynFontAtlas::OFS_DynFontAtlas() noexcept
     builder.AddText(ICON_UNLINK);
     builder.AddText(ICON_COPY);
     builder.AddText(ICON_LEAF);
+    builder.AddText(ICON_ROTATE_CLOCKWISE);
+    builder.AddText(ICON_ROTATE_COUNTERCLOCKWISE);
+    builder.AddText(ICON_STOP);
 
     for (auto defaultStr : OFS_DefaultStrings::Default) {
         builder.AddText(defaultStr);

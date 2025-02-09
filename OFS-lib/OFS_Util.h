@@ -51,6 +51,9 @@
 #define ICON_UNLINK "\xef\x84\xa7"
 #define ICON_COPY "\xef\x83\x85"
 #define ICON_LEAF "\xef\x81\xac"
+#define ICON_ROTATE_CLOCKWISE "\xef\x80\x9e"
+#define ICON_ROTATE_COUNTERCLOCKWISE "\xef\x83\xa2"
+#define ICON_STOP "\xef\x81\x8d"
 // when adding new ones they need to get added in OFS_DynamicFontAtlas
 
 #if defined(WIN32)
