@@ -47,6 +47,7 @@ protected:
 
 	static void drawActionLinesSpline(const OverlayDrawingCtx& ctx, const BaseOverlayState& state) noexcept;
 	static void drawActionLinesLinear(const OverlayDrawingCtx& ctx, const BaseOverlayState& state) noexcept;
+    static void BaseOverlay::drawActionLinesSquare(const OverlayDrawingCtx& ctx, const BaseOverlayState& state) noexcept;
 
 public:
 	inline static BaseOverlayState& State() noexcept
