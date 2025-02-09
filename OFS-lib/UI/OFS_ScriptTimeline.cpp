@@ -453,7 +453,7 @@ void ScriptTimeline::ShowScriptPositions(
 				auto& overlayState = BaseOverlayState::State(overlayStateHandle);
 				ImGui::MenuItem(TR(SHOW_ACTION_LINES), 0, &BaseOverlay::ShowLines);
 				ImGui::MenuItem(TR(SHOW_ACTION_POINTS), 0, &BaseOverlay::ShowPoints);
-				ImGui::MenuItem(TR(SPLINE_MODE), 0, &overlayState.SplineMode);
+				//ImGui::MenuItem(TR(SPLINE_MODE), 0, &overlayState.SplineMode);
 				ImGui::MenuItem(TR(SHOW_VIDEO_POSITION), 0, &overlayState.SyncLineEnable);
 				OFS::Tooltip(TR(SHOW_VIDEO_POSITION_TOOLTIP));
 				ImGui::EndMenu();
