@@ -335,6 +335,19 @@ void OFS_Project::ExportFunscripts() noexcept
     }
 }
 
+void OFS_Project::ExportFunscriptsAsCsv() noexcept
+{
+    auto& state = State();
+    for (auto& script : Funscripts) {
+        FUN_ASSERT(!script->RelativePath().empty(), "path is empty");
+        if (!script->RelativePath().empty()) {
+            auto csvText = script->ConvertToCSV();
+            script->ClearUnsavedEdits();
+            Util::WriteFile(MakePathAbsolute(script->RelativePathWithReplaceExt(".csv")).c_str(), csvText.data(), csvText.size());
+        }
+    }
+}
+
 void OFS_Project::ExportFunscripts(const std::string& outputDir) noexcept
 {
     auto& state = State();
@@ -361,6 +374,29 @@ void OFS_Project::ExportFunscript(const std::string& outputPath, int32_t idx) no
     Funscripts[idx]->UpdateRelativePath(MakePathRelative(outputPath));
     auto jsonText = Util::SerializeJson(json, false);
     Util::WriteFile(outputPath.c_str(), jsonText.data(), jsonText.size());
+}
+
+
+void OFS_Project::ExportFunscriptAsCsv(const std::string& outputPath, int32_t idx) noexcept
+{
+    FUN_ASSERT(idx >= 0 && idx < Funscripts.size(), "out of bounds");
+    auto csvText = Funscripts[idx]->ConvertToCSV();
+    Funscripts[idx]->ClearUnsavedEdits();
+    // Using this function changes the default path
+    Funscripts[idx]->UpdateRelativePath(MakePathRelative(outputPath));
+    
+    Util::WriteFile(outputPath.c_str(), csvText.data(), csvText.size());
+}
+
+void OFS_Project::ExportFunscriptAsUfoTwCsv(const std::string& outputPath, int32_t idx_L, int32_t idx_R) noexcept
+{
+    FUN_ASSERT(idx_L >= 0 && idx_L < Funscripts.size(), "out of bounds");
+    FUN_ASSERT(idx_R >= 0 && idx_R < Funscripts.size(), "out of bounds");
+    auto csvText = Funscript::ConvertToUfoTwCsv(Funscripts[idx_L]->Data(), Funscripts[idx_R]->Data());
+    Funscripts[idx_L]->ClearUnsavedEdits();
+    Funscripts[idx_R]->ClearUnsavedEdits();
+    
+    Util::WriteFile(outputPath.c_str(), csvText.data(), csvText.size());
 }
 
 void OFS_Project::loadMultiAxis(const std::string& rootScript) noexcept

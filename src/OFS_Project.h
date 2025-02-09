@@ -69,8 +69,11 @@ public:
     inline ProjectState& State() const noexcept { return ProjectState::State(stateHandle); }
 
     void ExportFunscripts() noexcept;
+    void ExportFunscriptsAsCsv() noexcept;
     void ExportFunscripts(const std::string& outputDir) noexcept;
     void ExportFunscript(const std::string& outputPath, int32_t idx) noexcept;
+    void ExportFunscriptAsCsv(const std::string& outputPath, int32_t idx) noexcept;
+    void ExportFunscriptAsUfoTwCsv(const std::string& outputPath, int32_t idx_L, int32_t idx_R) noexcept;
 
     std::string MakePathAbsolute(const std::string& relPath) const noexcept;
     std::string MakePathRelative(const std::string& absPath) const noexcept;
