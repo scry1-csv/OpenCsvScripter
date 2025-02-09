@@ -6,6 +6,10 @@ Vorze A10サイクロンSA / UFOSA / UFOTW 用のCSVスクリプトファイル�
 
 OpenGL, SDL2, ImGui, libmpv, その他多くの偉大な [ライブラリ](https://github.com/OpenFunscripter/OpenFunscripter/tree/master/lib) に依存しています。
 
+## ダウンロード
+
+[ここ](https://github.com/scry1-csv/OpenCsvScripter/releases/)からダウンロードできます。
+
 ## OpenFunscripterからの変更点
 
 - スクリプトタイムラインのグラフ表示を回転型スクリプトに向いた矩形波に
