@@ -112,6 +112,8 @@ private:
     void addEditAction(int pos) noexcept;
 
     void saveActiveScriptAs();
+    void saveActiveScriptAsCsv();
+    void saveScriptsAsUfoTwCsv();
 
     void openFile(const std::string& file) noexcept;
     void initProject() noexcept;
@@ -128,7 +130,7 @@ private:
     void ShowAboutWindow(bool* open) noexcept;
     void ShowStatisticsWindow(bool* open) noexcept;
     void ShowMainMenuBar() noexcept;
-    bool ShowMetadataEditorWindow(bool* open) noexcept;
+    //bool ShowMetadataEditorWindow(bool* open) noexcept;
 
 public:
     static OpenFunscripter* ptr;

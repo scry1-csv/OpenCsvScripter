@@ -176,7 +176,7 @@ bool OpenFunscripter::Init(int argc, char* argv[])
     SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
 
     window = SDL_CreateWindow(
-        "OpenFunscripter " OFS_LATEST_GIT_TAG "@" OFS_LATEST_GIT_HASH,
+        "OpenCsvSripter " OFS_LATEST_GIT_TAG "@" OFS_LATEST_GIT_HASH,
         SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
         DefaultWidth, DefaultHeight,
         SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_HIDDEN);
@@ -362,77 +362,77 @@ void OpenFunscripter::registerBindings()
         keys->RegisterAction(
             { "action_0",
                 [this]() { addEditAction(0); } },
-            Tr::ACTION_ACTION_0, "Actions",
+            Tr::ACTION_ACTION_MINUS100, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad0 },
             });
         keys->RegisterAction(
             { "action_10",
                 [this]() { addEditAction(10); } },
-            Tr::ACTION_ACTION_10, "Actions",
+            Tr::ACTION_ACTION_MINUS80, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad1 },
             });
         keys->RegisterAction(
             { "action_20",
                 [this]() { addEditAction(20); } },
-            Tr::ACTION_ACTION_20, "Actions",
+            Tr::ACTION_ACTION_MINUS60, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad2 },
             });
         keys->RegisterAction(
             { "action_30",
                 [this]() { addEditAction(30); } },
-            Tr::ACTION_ACTION_30, "Actions",
+            Tr::ACTION_ACTION_MINUS40, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad3 },
             });
         keys->RegisterAction(
             { "action_40",
                 [this]() { addEditAction(40); } },
-            Tr::ACTION_ACTION_40, "Actions",
+            Tr::ACTION_ACTION_MINUS20, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad4 },
             });
         keys->RegisterAction(
             { "action_50",
                 [this]() { addEditAction(50); } },
-            Tr::ACTION_ACTION_50, "Actions",
+            Tr::ACTION_ACTION_0, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad5 },
             });
         keys->RegisterAction(
             { "action_60",
                 [this]() { addEditAction(60); } },
-            Tr::ACTION_ACTION_60, "Actions",
+            Tr::ACTION_ACTION_PLUS20, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad6 },
             });
         keys->RegisterAction(
             { "action_70",
                 [this]() { addEditAction(70); } },
-            Tr::ACTION_ACTION_70, "Actions",
+            Tr::ACTION_ACTION_PLUS40, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad7 },
             });
         keys->RegisterAction(
             { "action_80",
                 [this]() { addEditAction(80); } },
-            Tr::ACTION_ACTION_80, "Actions",
+            Tr::ACTION_ACTION_PLUS60, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad8 },
             });
         keys->RegisterAction(
             { "action_90",
                 [this]() { addEditAction(90); } },
-            Tr::ACTION_ACTION_90, "Actions",
+            Tr::ACTION_ACTION_PLUS80, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_Keypad9 },
             });
         keys->RegisterAction(
             { "action_100",
                 [this]() { addEditAction(100); } },
-            Tr::ACTION_ACTION_100, "Actions",
+            Tr::ACTION_ACTION_PLUS100, "Actions",
             {
                 { ImGuiMod_None, ImGuiKey_KeypadDivide },
             });
@@ -1843,15 +1843,15 @@ void OpenFunscripter::UpdateNewActiveScript(uint32_t activeIndex) noexcept
 
 void OpenFunscripter::updateTitle() noexcept
 {
-    const char* title = "OFS";
+    const char* title = "OCS";
     if (LoadedProject->IsValid()) {
-        title = Util::Format("OpenFunscripter %s@%s - \"%s\"",
+        title = Util::Format("OpenCsvScripter %s@%s - \"%s\"",
             OFS_LATEST_GIT_TAG,
             OFS_LATEST_GIT_HASH,
             LoadedProject->Path().c_str());
     }
     else {
-        title = Util::Format("OpenFunscripter %s@%s",
+        title = Util::Format("OpenCsvScripter %s@%s",
             OFS_LATEST_GIT_TAG,
             OFS_LATEST_GIT_HASH);
     }
@@ -1873,7 +1873,7 @@ void OpenFunscripter::saveProject() noexcept
 void OpenFunscripter::quickExport() noexcept
 {
     OFS_PROFILE(__FUNCTION__);
-    LoadedProject->ExportFunscripts();
+    LoadedProject->ExportFunscriptsAsCsv();
 }
 
 bool OpenFunscripter::closeProject(bool closeWithUnsavedChanges) noexcept
@@ -2121,6 +2121,44 @@ void OpenFunscripter::saveActiveScriptAs()
         { "Funscript", "*.funscript" });
 }
 
+void OpenFunscripter::saveActiveScriptAsCsv()
+{
+    Util::SaveFileDialog(TR(SAVE),
+        LoadedProject->MakePathAbsolute(ActiveFunscript()->RelativePathWithReplaceExt(".csv")),
+        [this](auto& result) {
+            if (result.files.size() > 0) {
+                LoadedProject->ExportFunscriptAsCsv(result.files[0], LoadedProject->ActiveIdx());
+                auto dir = Util::PathFromString(result.files[0]);
+                dir.remove_filename();
+                auto& ofsState = OpenFunscripterState::State(stateHandle);
+                ofsState.lastPath = dir.u8string();
+            }
+        },
+        { "csv", "*.csv" });
+}
+
+void OpenFunscripter::saveScriptsAsUfoTwCsv()
+{
+    if (LoadedFunscripts().size() < 2) {
+        Util::MessageBoxAlert("Error", "need two scripts");
+        return;
+    }
+    else {
+        Util::SaveFileDialog(TR(SAVE),
+            LoadedProject->MakePathAbsolute(LoadedFunscripts()[0]->RelativePathWithReplaceExt("_UFOTW.csv")),
+            [this](auto& result) {
+                if (result.files.size() > 0) {
+                    LoadedProject->ExportFunscriptAsUfoTwCsv(result.files[0], 0, 1);
+                    auto dir = Util::PathFromString(result.files[0]);
+                    dir.remove_filename();
+                    auto& ofsState = OpenFunscripterState::State(stateHandle);
+                    ofsState.lastPath = dir.u8string();
+                }
+            },
+            { "csv", "*.csv" });
+    }
+}
+
 void OpenFunscripter::ShowMainMenuBar() noexcept
 {
 #define BINDING_STRING(binding) nullptr // TODO: keybinds.getBindingString(binding)
@@ -2189,22 +2227,26 @@ void OpenFunscripter::ShowMainMenuBar() noexcept
                 }
                 OFS::Tooltip(TR(QUICK_EXPORT_TOOLTIP));
                 if (ImGui::MenuItem(FMT(ICON_SHARE " %s", TR(EXPORT_ACTIVE_SCRIPT)))) {
-                    saveActiveScriptAs();
+                    saveActiveScriptAsCsv();
+                }
+                OFS::Tooltip(TR(QUICK_EXPORT_TOOLTIP));
+                if (ImGui::MenuItem(FMT(ICON_SHARE " %s", TR(EXPORT_AS_UFOTW_SCRIPT)), 0, false, LoadedFunscripts().size() >= 2)) {
+                    saveScriptsAsUfoTwCsv();
                 }
                 if (ImGui::MenuItem(FMT(ICON_SHARE " %s", TR(EXPORT_ALL)))) {
                     if (LoadedFunscripts().size() == 1) {
-                        auto savePath = Util::PathFromString(ofsState.lastPath) / (ActiveFunscript()->Title() + ".funscript");
+                        auto savePath = Util::PathFromString(ofsState.lastPath) / (ActiveFunscript()->Title() + ".csv");
                         Util::SaveFileDialog(TR(EXPORT_MENU), savePath.u8string(),
                             [this](auto& result) {
                                 if (result.files.size() > 0) {
-                                    LoadedProject->ExportFunscript(result.files[0], LoadedProject->ActiveIdx());
+                                    LoadedProject->ExportFunscriptAsCsv(result.files[0], LoadedProject->ActiveIdx());
                                     std::filesystem::path dir = Util::PathFromString(result.files[0]);
                                     dir.remove_filename();
                                     auto& ofsState = OpenFunscripterState::State(stateHandle);
                                     ofsState.lastPath = dir.u8string();
                                 }
                             },
-                            { "Funscript", "*.funscript" });
+                            { "csv", "*.csv" });
                     }
                     else if (LoadedFunscripts().size() > 1) {
                         Util::OpenDirectoryDialog(TR(EXPORT_MENU), ofsState.lastPath,
@@ -2277,7 +2319,7 @@ void OpenFunscripter::ShowMainMenuBar() noexcept
                                 }
                             }
                         },
-                        { "Funscript", "*.funscript" });
+                        { "csv", "*.csv" });
                 }
                 if (ImGui::MenuItem(TR(ADD_EXISTING))) {
                     Util::OpenFileDialog(
@@ -2292,7 +2334,7 @@ void OpenFunscripter::ShowMainMenuBar() noexcept
                                 }
                             }
                         },
-                        true, { "*.funscript" }, "Funscript");
+                        true, { "*.csv" }, "csv");
                 }
                 ImGui::EndMenu();
             }
@@ -2694,11 +2736,11 @@ void OpenFunscripter::ShowAboutWindow(bool* open) noexcept
     if (!*open) return;
     OFS_PROFILE(__FUNCTION__);
     ImGui::Begin(TR(ABOUT), open, ImGuiWindowFlags_None | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoDocking | ImGuiWindowFlags_NoCollapse);
-    ImGui::TextUnformatted("OpenFunscripter " OFS_LATEST_GIT_TAG);
+    ImGui::TextUnformatted("OpenCsvScripter " OFS_LATEST_GIT_TAG);
     ImGui::Text("%s: %s", TR(GIT_COMMIT), OFS_LATEST_GIT_HASH);
 
     if (ImGui::Button(FMT("%s " ICON_GITHUB, TR(LATEST_RELEASE)), ImVec2(-1.f, 0.f))) {
-        Util::OpenUrl("https://github.com/OpenFunscripter/OFS/releases/latest");
+        Util::OpenUrl("https://github.com/scry1-csv/OpenCsvScripter");
     }
     ImGui::End();
 }
@@ -2726,18 +2768,27 @@ void OpenFunscripter::ShowStatisticsWindow(bool* open) noexcept
         ImGui::Text("%s: %.2lf ms", TR(INTERVAL), ((double)currentTime - behind->atS) * 1000.0);
         if (front != nullptr) {
             auto duration = front->atS - behind->atS;
-            int32_t length = front->pos - behind->pos;
-            ImGui::Text("%s: %.02lf units/s", TR(SPEED), std::abs(length) / duration);
-            ImGui::Text("%s: %.2lf ms", TR(DURATION), (double)duration * 1000.0);
-            if (length > 0) {
+
+            int32_t ufofront = (front->pos - 50) * 2;
+            int32_t ufobehind = (behind->pos - 50) * 2;
+            int32_t length = ufofront - ufobehind;
+
+            // ImGui::Text("%s: %.02lf units/s", TR(SPEED), std::abs(length) / duration);
+            // ImGui::Text("%s: %.2lf ms", TR(DURATION), (double)duration * 1000.0);
+            if (ufofront == 0) {
                 ImGui::Text("%3d " ICON_LONG_ARROW_RIGHT " %3d"
-                            " = %3d " ICON_LONG_ARROW_UP,
-                    behind->pos, front->pos, length);
+                            " = %3d " ICON_STOP,
+                    ufobehind, ufofront, -length);
+            }
+            else if (length > 0) {
+                ImGui::Text("%3d " ICON_LONG_ARROW_RIGHT " %3d"
+                            " = %3d " ICON_ROTATE_COUNTERCLOCKWISE,
+                    ufobehind, ufofront, length);
             }
             else {
                 ImGui::Text("%3d " ICON_LONG_ARROW_RIGHT " %3d"
-                            " = %3d " ICON_LONG_ARROW_DOWN,
-                    behind->pos, front->pos, -length);
+                            " = %3d " ICON_ROTATE_CLOCKWISE,
+                    ufobehind, ufofront, -length);
             }
         }
     }
