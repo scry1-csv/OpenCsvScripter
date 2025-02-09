@@ -201,17 +201,17 @@ VIDEOPLAYER_BINDING_GROUP,Videoplayer,Videoplayer
 EXTENSIONS_BINDING_GROUP,Extensions,Extensions
 CONTROLLER_BINDING_GROUP,Controller,Controller
 ACTION_REMOVE_ACTION,Remove action,Remove action
+ACTION_ACTION_MINUS100,Action at -100,Action at -100
+ACTION_ACTION_MINUS80,Action at -80,Action at -80
+ACTION_ACTION_MINUS60,Action at -60,Action at -60
+ACTION_ACTION_MINUS40,Action at -40,Action at -40
+ACTION_ACTION_MINUS20,Action at -20,Action at -20
 ACTION_ACTION_0,Action at 0,Action at 0
-ACTION_ACTION_10,Action at 10,Action at 10
-ACTION_ACTION_20,Action at 20,Action at 20
-ACTION_ACTION_30,Action at 30,Action at 30
-ACTION_ACTION_40,Action at 40,Action at 40
-ACTION_ACTION_50,Action at 50,Action at 50
-ACTION_ACTION_60,Action at 60,Action at 60
-ACTION_ACTION_70,Action at 70,Action at 70
-ACTION_ACTION_80,Action at 80,Action at 80
-ACTION_ACTION_90,Action at 90,Action at 90
-ACTION_ACTION_100,Action at 100,Action at 100
+ACTION_ACTION_PLUS20,Action at 20,Action at 20
+ACTION_ACTION_PLUS40,Action at 40,Action at 40
+ACTION_ACTION_PLUS60,Action at 60,Action at 60
+ACTION_ACTION_PLUS80,Action at 80,Action at 80
+ACTION_ACTION_PLUS100,Action at 100,Action at 100
 ACTION_SAVE_PROJECT,Save project,Save project
 ACTION_QUICK_EXPORT,Quick export,Quick export
 ACTION_SYNC_TIME_WITH_PLAYER,Sync time with player,Sync time with player
@@ -280,7 +280,7 @@ UNSAVED_CHANGES,Unsaved changes,Unsaved changes
 UNSAVED_CHANGES_MSG,Do you want to save and exit?,Do you want to save and exit?
 FILE_NOT_FOUND,File not found,File not found
 COULDNT_FIND_FILE,Couldn’t find file,Couldn’t find file
-OFS_FAILED_TO_IMPORT,OpenFunscripter failed to import.,OpenFunscripter failed to import.
+OFS_FAILED_TO_IMPORT,OpenCsvScripter failed to import.,OpenCsvScripter failed to import.
 OFS_FAILED_TO_IMPORT_MSG,Failed to import,Failed to import
 FAILED_TO_LOAD,Failed to load,Failed to load
 FAILED_TO_LOAD_MSG,The project failed to load.,The project failed to load.
@@ -302,8 +302,9 @@ NO_RECENT_FILES,No recent files,No recent files
 SAVE_PROJECT,Save project,Save project
 EXPORT_MENU,Export...,Export...
 QUICK_EXPORT,Quick export,Quick export
-QUICK_EXPORT_TOOLTIP,Exports all scripts as .funscript in their default paths.,Exports all scripts as .funscript in their default paths.
+QUICK_EXPORT_TOOLTIP,Exports all scripts as .csv in their default paths.,Exports all scripts as .csv in their default paths.
 EXPORT_ACTIVE_SCRIPT,Export active script,Export active script
+EXPORT_AS_UFOTW_SCRIPT,Export as UFOTW script,Export as UFOTW script
 EXPORT_ALL,Export all,Export all
 AUTO_BACKUP_TIMER_FMT,Auto Backup in %d seconds,Auto Backup in %d seconds
 AUTO_BACKUP,Auto Backup,Auto Backup
@@ -312,9 +313,9 @@ CONFIGURE,Configure,Configure
 ADD_MENU,Add...,Add...
 ADD_SHORTCUTS,Shortcuts,Shortcuts
 ADD_NEW,Add new,Add new
-ADD_NEW_FUNSCRIPT,Add new funscript,Add new funscript
+ADD_NEW_FUNSCRIPT,Add new CSV,Add new CSV
 ADD_EXISTING,Add existing,Add existing
-ADD_EXISTING_FUNSCRIPTS,Add existing funscripts,Add existing funscripts
+ADD_EXISTING_FUNSCRIPTS,Add existing CSV,Add existing CSV
 REMOVE_SCRIPT_CONFIRM_MSG,"If the script wasn’t previously exported, this can’t be reverted.
 Continue?","If the script wasn’t previously exported, this can’t be reverted.
 Continue?"
