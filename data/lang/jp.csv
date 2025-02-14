@@ -1,0 +1,568 @@
+"Key (do not touch)",Default,Translation
+INVALID_TR,"%%this should not be displayed%%","%%this should not be displayed%%"
+ABOUT,About,このアプリについて
+LATEST_RELEASE,"Latest release",最終更新を確認に行く
+OFS_LOG_OUTPUT,"OFS Log Output","OFS Log Output"
+ADD_EDIT_ACTIONS,"Add/Edit actions","位置データ群 追加/編集"
+ADD_EDIT_ACTION,"Add/Edit action","位置データ 追加/編集"
+ADD_ACTION,"Add action",位置データ追加
+REMOVE_ACTIONS,"Remove actions","位置データ群 削除"
+REMOVE_ACTION,"Remove action",位置データ削除
+MOUSE_MOVED_ACTIONS,"Mouse moved actions",マウスで位置データを動かした
+ACTIONS_MOVED,"Actions moved","位置データ群 移動"
+CUT_SELECTION,"Cut selection","選択範囲 切り取り"
+REMOVE_SELECTION,"Remove selection","選択範囲 削除"
+PASTE_SELECTION,"Paste selection","選択範囲 貼り付け"
+EQUALIZE,Equalize,イコライズ（均等にする）
+INVERT,Invert,インバート（反転する）
+ISOLATE,Isolate,アイソレイト（分離する）
+TOP_POINTS,"Top points",高い値を選択
+MID_POINTS,"Mid points",中間値を選択
+BOTTOM_POINTS,"Bottom points",低い値を選択
+GENERATE_ACTIONS,"Generate actions",位置データを生成
+FRAME_ALIGN,"Frame align","Frame align"
+RANGE_EXTEND,"Range extend",レンジエクステンダ（位置データ拡縮）
+REPEAT_STROKE,"Repeat stroke",リピートストローク
+MOVE_TO_CURRENT_POSITION,"Move to current position",現在位置を移動
+SIMPLIFY,Simplify,簡易化
+LUA_SCRIPT,"Lua script","Lua script"
+REDO_STACK,"Redo stack",リドゥ履歴
+UNDO_STACK,"Undo stack",アンドゥ履歴
+UNDO_REDO_HISTORY,"Undo/Redo history","アンドゥ/リドゥ 履歴"
+T_CODE,T-Code,T-Code
+PORT,Port,Port
+OPEN_PORT,"Open port","Open port"
+LIMITS,Limits,Limits
+LINEAR_LIMITS,"Linear limits","Linear limits"
+ROTATION_LIMITS,"Rotation limits","Rotation limits"
+VIBRATION_LIMITS,"Vibration limits","Vibration limits"
+GLOBAL_SETTINGS,"Global settings","Global settings"
+DELAY,Delay,Delay
+CONTROLLER_BUTTON_A,"A / X","XBOX A / PS ×"
+CONTROLLER_BUTTON_B,"B / Circle","XBOX B / PS 〇"
+CONTROLLER_BUTTON_X,"X / Square","XBOX X / PS □"
+CONTROLLER_BUTTON_Y,"Y / Triangle","XBOX Y / PS △"
+CONTROLLER_BUTTON_BACK,"Back / Share","XBOX Back / PS Share"
+CONTROLLER_BUTTON_GUIDE,Guide,Guide
+CONTROLLER_BUTTON_START,Start,Start
+CONTROLLER_BUTTON_LEFTSTICK,Leftstick,左スティック
+CONTROLLER_BUTTON_RIGHTSTICK,Rightstick,右スティック
+CONTROLLER_BUTTON_LEFTSHOULDER,Leftshoulder,Lボタン
+CONTROLLER_BUTTON_RIGHTSHOULDER,Rightshoulder,Rボタン
+CONTROLLER_BUTTON_DPAD_UP,"DPAD Up","DPAD ↑ボタン"
+CONTROLLER_BUTTON_DPAD_DOWN,"DPAD Down","DPAD ↓ボタン"
+CONTROLLER_BUTTON_DPAD_LEFT,"DPAD Left","DPAD ←ボタン"
+CONTROLLER_BUTTON_DPAD_RIGHT,"DPAD Right","DPAD →ボタン"
+CONTROLLER_NOT_SET,"- Not set -",無効
+KEY_MOD_CTRL,Ctrl,Ctrl
+KEY_MOD_ALT,Alt,Alt
+KEY_MOD_SHIFT,Shift,Shift
+KEY_ALREADY_IN_USE,"Key is in use",既に使用されているキーショートカット
+KEY_ALREADY_IN_USE_MSG,"Key already bound for [%s]","そのキーは既に [%s] に設定されています"
+BUTTON_ALREADY_IN_USE,"Button is in use",既に使用されているボタン
+BUTTON_ALREADY_IN_USE_MSG,"Button already bound for [%s]","そのボタンは既に [%s] に設定されています"
+DESCRIPTION,Description,説明
+KEYBOARD,Keyboard,キーボード
+ACTIVE,Active,有効
+KEY_NOT_SET,"- Not set -",無効
+CHANGE_KEY,"Change key",キー変更
+CHANGE_KEY_MSG,"Press any key...
+Escape to exit.",押したキーが設定されます...
+ESCキーでキャンセル
+PASSIVE_BINDING_TXT1,"Here modifiers can be configured which change certain behaviour.",ここでは、特定の挙動を変更することができます。
+PASSIVE_BINDING_TXT2,"You can only use Shift, Ctrl & Alt.",Shift、Ctrl、Altのみ使用可能です
+KEYS,Keys,キーコンフィグ
+BINDINGS,Bindings,バインディング（設定）
+BINDING_TXT1,"You can use CTRL, SHIFT & ALT as modifiers.",キー設定にCTRL、SHIFT、ALTキーを追加する事も出来ます
+BINDING_TXT2,"Only controller buttons can be bound. The DPAD directions count as a buttons.",ゲームパッドで設定できるのはボタンのみです
+BINDING_TXT3,"The configuration gets saved everytime a change is made.",設定を変更するとすぐに保存されます
+BINDING_TXT4,"If you wan't to revert to the defaults, you'll have to delete the config.",デフォルトに戻したい場合は、コンフィグファイル（AppData/Roaming/OFS/OFS2_data/keybinds.json）を削除して下さい
+翻訳データに含まれる文字だけエクステンションでも使える事が分かったので未使用の行に羅列
+あいうえおかきくけこさしすせそたちつてとなにぬねの
+はひふへほまみむめもやゆよらりるれろわをんっゃゅょぁぃぅぇぉ
+がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ、。「」
+アイウエオカキクケコサシスセソタチツテトナニヌネノ
+ハヒフヘホマミムメモヤユヨラリルレロワヲンッャュョァィゥェォ
+ガギグゲゴザジズゼゾダヂヅデドバビブベボパピプペポヴ
+拡大縮小配置位計算未満以意味反対回往復物長短行列前後最先頭尾太細関数指半急早速遅直接央量都度
+内外上下大小高低検索探得間揃方向対順奇数偶変有無結果構成箇所歌乗降対象挿入抜設定単体複補換
+影響超残真中保修正証折三角矩形鋸足引割掛加減算相絶激部分連続既固一二三四五六七八九十倍充近遠処理成功失敗過不整同士各値比率除較係通常特殊異変化頂点底辺線曲
+FILTER,Filter,フィルタ
+MODIFIERS,Modifiers,挙動設定
+ACTION,Action,動作
+CONTROLLER,Controller,ゲームパッド
+IGNORE_REPEATS,"Ignore repeats",キーリピート無効
+CHANGE_BUTTON,"Change button",ボタン変更
+CHANGE_BUTTON_MSG,"Press any button...
+Escape to clear.",押したボタンが設定されます...
+ESCキーを押すとこのショートカットを無効にします
+RUNNING_TASK,"Running task",タスク実行中
+THIS_MAY_TAKE_A_WHILE,"This may take a while...",しばらく時間がかかります...
+OPTIONS,Options,オプション
+AUTO_SCROLL,Auto-scroll,Auto-scroll
+CLEAR,Clear,クリア
+COPY,Copy,コピー
+USED,Used,Used
+ALLOCATED,Allocated,Allocated
+SCRIPTS,Scripts,スクリプト表示
+RENDERING,Rendering,レンダリング
+SHOW_ACTIONS,"Show actions",グッズの位置表示
+SPLINE_MODE,"Spline mode",グッズの動きをスプラインで表示
+SHOW_VIDEO_POSITION,"Show video position",動画の位置を表示
+WAVEFORM,Waveform,波形表示
+SETTINGS,Settings,設定
+SCALE,Scale,スケール
+COLOR,Color,色
+ENABLE_WAVEFORM,"Enable waveform",波形表示を有効にする
+MIN_INT_FMT,"Min: %d","Min: %d"
+MAX_INT_FMT,"Max: %d","Max: %d"
+TCODE_TICKRATE,"Tickrate (Hz)","Tickrate (Hz)"
+SPLINE,Spline,Spline
+SPLINE_TOOLTIP,"Smooth motion instead of linear.","Smooth motion instead of linear."
+REMAP,Remap,Remap
+REMAP_TOOLTIP,"Remap script to use the full range.
+i.e. scripts using the range 10 to 90 become 0 to 100.","Remap script to use the full range.
+i.e. scripts using the range 10 to 90 become 0 to 100."
+DELAY_TOOLTIP,"Negative: Backward in time.
+Positive: Forward in time.","Negative: Backward in time.
+Positive: Forward in time."
+OUTPUTS,Outputs,Outputs
+YOU_CAN_RIGHT_CLICK_SLIDERS_TOOLTIP,"You can right click sliders.","You can right click sliders."
+REBALANCE,Rebalance,Rebalance
+REBALANCE_TOOLTIP,"Balance around 500 even with unevenly spread limits.","Balance around 500 even with unevenly spread limits."
+GAMEPAD_ONLY,only,only
+SHOW_VIDEO_POSITION_TOOLTIP,"(Frame overlay only)
+Shows a red line where the current frame is.
+More of a debugging feature.",(FPSオーバーライド時のみ)
+現在表示される動画の位置を赤い線で表示します
+※どちらかというとデバッグ用の機能です
+PROCESSING_AUDIO,"Processing audio...","Processing audio..."
+UPDATE_WAVEFORM,"Update waveform",波形表示を更新する
+POSITIONS,Positions,Positions
+LOOP_A_SET,"Loop A set","Loop A set"
+LOOP_B_SET,"Loop B set","Loop B set"
+LOCK,Lock,表示位置をロック
+CLICK_TO_ENABLE_VIDEO,"Click to enable video","Click to enable video"
+LOOP_CLEARED,"Loop cleared","Loop cleared"
+VIDEOPLAYER,Player,動画プレイヤー
+SPEED,Speed,スピード
+TIMELINE,Timeline,タイムライン
+TIME,Time,時間
+CONTROLS,Controls,動画コントーラ
+TIMELINE_SECONDS,seconds,秒
+TASK_EXPORTING_CLIPS,"Exporting clips",クリップ出力中
+PROJECT,Project,プロジェクト
+MEDIA,Media,動画ファイル
+CHANGE_DEFAULT_LOCATION,"Change default location",スクリプトの標準の保存先を変更する
+CHANGE_LOCATION,"Change location",スクリプトの保存先を変更する
+SCRIPTING_MODE,"Scripting mode",スクリプティングモード
+DEFAULT_MODE,Default,標準
+ALTERNATING_MODE,Alternating,オルタネイティング（交互設定モード）
+DYNAMIC_INJECTION_MODE,"Dynamic injection",ダイナミックインジェクション（Top/Bottomを自動入力）
+RECORDING_MODE,Recording,録画モード
+SCRIPTING_OVERLAY,"Scripting overlay",スクリプトオーバーレイ（時間軸の編集単位）
+1フレーム移動などの単位の設定
+FRAME_OVERLAY,Frame,時間軸の編集単位、フレーム
+TEMPO_OVERLAY,Tempo,時間軸の編集単位、テンポ
+EMPTY_OVERLAY,None,無し
+OFFSET_MS,"Offset (ms)","オフセット (ミリ秒)"
+OFFSET_TOOLTIP,"Applies an offset to actions inserted while the video is playing.
+- : inserts earlier
++ : inserts later","動画を再生しながら位置データを追加した時、
+設定する位置にオフセットを付けます
+- : 早くする（再生位置より後へ設定）
++ : 遅くする（再生位置より先へ設定）"
+MIRROR_MODE,"Mirror mode",ミラーモード
+MIRROR_MODE_TOOLTIP,"Mirrors add/edit/remove action across all loaded scripts.",ミラーモードオンの時、全てのスクリプトを同時に編集します
+（複数スクリプト編集時しか効果はありません）
+DI_TARGET_SPEED,"Target speed (units/s)","ストローク速度 (units/s)
+自動挿入するポイントの移動速度"
+DI_UP_DOWN_BIAS,"Up/Down speed bias",上下ストローク速度バイアス
+上がる速度、下がる速度どちらに寄せるか
+TOP,Top,Topを自動入力
+BOTTOM,Bottom,Bottomを自動入力
+NEXT_POINT,"Next point",次の位置データ
+NEXT_POINT_AT_FMT,"Next point is at %d","次の位置データは何を入力しても %d に設定される"
+NEXT_POINT_IS_FMT,"Next point is %s","次の位置データは %s"
+INVERTED,inverted,上下反転される
+NOT_INVERTED,"not inverted",そのまま入力される
+FIXED_RANGE,"Fixed range",上下位置を固定値にする
+CONTEXT_SENSITIVE,"Context sensitive",コンテキストセンシティブ
+CONTEXT_SENSITIVE_TOOLTIP,"Alternates based on the previous action.",上に表示されている次の位置データが何が入力されるかの説明を単純にします
+また、固定値に設定を無視します
+（※この機能の理解が正しいか不明）
+MODE,Mode,モード
+MOUSE,Mouse,マウス
+CONTROLLER_DEADZONE,"Controller deadzone","ゲームパッド スティックのデッドゾーン"
+DEADZONE,Deadzone,デッドゾーン
+CENTER,Center,中心へ
+TWO_AXES,"Two axes",2軸
+TWO_AXES_TOOLTIP,"Recording pitch & roll at once.
+Only works with a controller.","Recording pitch & roll at once.
+Using Simulator 3D settings.
+Only works with a controller."
+RECORD_ON_PLAY,"Record on play",動画再生時、録画開始
+TWO_AXES_AXES,"X / Y","X / Y"
+POSITION,Position,グッズの位置
+RECORDING_ACTIVE,"Recording active",録画中
+RECORDING_PAUSED,"Recording paused",録画停止
+STATISTICS,Statistics,情報
+ACTION_EDITOR,"Action editor",アクションエディタ（グッズ位置入力）
+DYNAMIC_BINDING_GROUP,Dynamic,ダイナミック
+ACTIONS_BINDING_GROUP,Actions,"アクション （グッズの位置設定）"
+CORE_BINDING_GROUP,Core,"コア （プロジェクト保存エクスポートなど）"
+NAVIGATION_BINDING_GROUP,Navigation,ナビ（動画の現在位置の移動）
+UTILITY_BINDING_GROUP,Utility,ユーティリティ
+MOVING_BINDING_GROUP,Moving,ムーブ（グッズの位置データの移動）
+SPECIAL_BINDING_GROUP,Special,スペシャル
+VIDEOPLAYER_BINDING_GROUP,Videoplayer,動画プレイヤー
+EXTENSIONS_BINDING_GROUP,Extensions,エクステンション
+CONTROLLER_BINDING_GROUP,Controller,ゲームパッド
+ACTION_REMOVE_ACTION,"Remove action","位置データ削除 (Remove action)"
+ACTION_ACTION_MINUS100,"Action at -100","位置を -100にする (Action at -100)"
+ACTION_ACTION_MINUS80,"Action at -80","位置を -80にする (Action at -80)"
+ACTION_ACTION_MINUS60,"Action at -60","位置を  -60にする (Action at -60)"
+ACTION_ACTION_MINUS40,"Action at -40","位置を  -40にする (Action at -40)"
+ACTION_ACTION_MINUS20,"Action at -20","位置を  -20にする (Action at -20)"
+ACTION_ACTION_0,"Action at 0","位置を    0にする (Action at 0)"
+ACTION_ACTION_PLUS20,"Action at 20","位置を   20にする (Action at 20)"
+ACTION_ACTION_PLUS40,"Action at 40","位置を   40にする (Action at 40)"
+ACTION_ACTION_PLUS60,"Action at 60","位置を   60にする (Action at 60)"
+ACTION_ACTION_PLUS80,"Action at 80","位置を   80にする (Action at 80)"
+ACTION_ACTION_PLUS100,"Action at 100","位置を   100にする (Action at 100)"
+ACTION_SAVE_PROJECT,"Save project","プロジェクト上書き保存 (Save project)"
+ACTION_QUICK_EXPORT,"Quick export","クィックエクスポート (Quick export)"
+ACTION_SYNC_TIME_WITH_PLAYER,"Sync time with player","動画の位置に合わせる (Sync time with player)"
+ACTION_CYCLE_FORWARD_LOADED_SCRIPTS,"Cycle forward loaded scripts","複数編集時、上のスクリプトに切り替え (Cycle forward loaded scripts)"
+ACTION_CYCLE_BACKWARD_LOADED_SCRIPTS,"Cycle backward loaded scripts","複数編集時、下のスクリプトに切り替え (Cycle backward loaded scripts)"
+ACTION_PREVIOUS_ACTION,"Previous action","前の位置データへ (Previous action)"
+ACTION_NEXT_ACTION,"Next action","次の位置データへ (Next action)"
+ACTION_PREVIOUS_ACTION_MULTI,"Previous action (multi)","前の位置データへ(複数スクリプト参照) (Previous action)"
+ACTION_NEXT_ACTION_MULTI,"Next action (multi)","次の位置データへ(複数スクリプト参照) (Next action)"
+ACTION_PREV_FRAME,"Previous frame","前のフレームへ (Previous frame)"
+ACTION_NEXT_FRAME,"Next frame","次のフレームへ (Next frame)"
+ACTION_FAST_STEP,"Fast step","ファストステップ、数フレーム先へ (Fast step)"
+ACTION_FAST_BACKSTEP,"Fast backstep","ファストバック、数フレーム前へ (Fast backstep)"
+ACTION_UNDO,Undo,"アンドゥ （Undo）"
+ACTION_REDO,Redo,"リドゥ (Redo)"
+ACTION_COPY,Copy,"コピー (Copy)"
+ACTION_PASTE,Paste,"貼り付け (Paste)"
+ACTION_CUT,Cut,"切り取り (Cut)"
+ACTION_PASTE_EXACT,"Paste exact","同じ位置へ貼り付け（別スクリプトへの貼り付け用） (Paste exact)"
+ACTION_SELECT_ALL,"Select all","全て選択 (Select all)"
+ACTION_DESELECT_ALL,"Deselect all","選択解除 (Deselect all)"
+ACTION_SELECT_ALL_LEFT,"Select all left","左を全て選択 (Select all left)"
+ACTION_SELECT_ALL_RIGHT,"Select all right","右を全て選択 (Select all right)"
+ACTION_SELECT_TOP,"Select top points","選択から高い値を選択 (Select top points)"
+ACTION_SELECT_BOTTOM,"Select bottom points","選択から低い値を選択 (Select bottom points)"
+ACTION_SELECT_MID,"Select middle points","選択から中間値を選択 (Select middle points)"
+ACTION_TOGGLE_MIRROR_MODE,"Toggle mirror mode","ミラーモード切り替え (Toggle mirror mode)"
+ACTION_SAVE_FRAME,"Save frame as image","動画のスクリーンショットを保存する (Save frame as image)"
+ACTION_CYCLE_SUBTITLES,"Cycle subtitles","字幕切り替え (Cycle subtitles)"
+ACTION_TOGGLE_FULLSCREEN,"Toggle fullscreen","フルスクリーン切り替え (Toggle fullscreen)"
+ACTION_MOVE_UP_10,"Move actions +10 up","位置データを10上げる (Move actions +10 up)"
+ACTION_MOVE_DOWN_10,"Move actions -10 down","位置データを10下げる (Move actions -10 down)"
+ACTION_MOVE_UP_5,"Move actions +5 up","位置データを 5上げる (Move actions +5 up)"
+ACTION_MOVE_DOWN_5,"Move actions -5 down","位置データを 5下げる (Move actions -5 down)"
+ACTION_MOVE_ACTIONS_LEFT_SNAP,"Move actions left with snapping","位置データと現在位置を前へ  (Move actions left with snapping)"
+ACTION_MOVE_ACTIONS_RIGHT_SNAP,"Move actions right with snapping","位置データと現在位置を次へ(Move actions right with snapping)"
+ACTION_MOVE_ACTIONS_LEFT,"Move actions left","位置データを前へ (Move actions left)"
+ACTION_MOVE_ACTIONS_RIGHT,"Move actions right","位置データを次へ (Move actions right)"
+ACTION_MOVE_ACTIONS_UP,"Move actions up","位置データを上げる (Move actions up)"
+ACTION_MOVE_ACTIONS_DOWN,"Move actions down","位置データを下げる (Move actions down)"
+ACTION_MOVE_TO_CURRENT_POSITION,"Move to current position","位置データを現在位置に移動する (Move to current position)"
+ACTION_EQUALIZE_ACTIONS,"Equalize actions","イコライザをかける (Equalize actions)"
+ACTION_INVERT_ACTIONS,"Invert actions","反転する (Invert actions)"
+ACTION_ISOLATE_ACTION,"Isolate action","アイソレイトをかける (Isolate action)"
+ACTION_REPEAT_STROKE,"Repeat stroke","ストロークを繰り返す(Repeat stroke)"
+ACTION_TOGGLE_PLAY,"Play / Pause","動画再生 / 停止 (Play / Pause)"
+ACTION_REDUCE_PLAYBACK_SPEED,"Playback speed -10%","動画再生速度 -10% (Playback speed -10%)"
+ACTION_INCREASE_PLAYBACK_SPEED,"Playback speed +10%","動画再生速度 +10% (Playback speed +10%)"
+ACTION_GO_TO_START,"Go to the start","動画の先頭へ (Go to the start)"
+ACTION_GO_TO_END,"Go to the end","動画の終端へ (Go to the end)"
+ACTION_RELOAD_ENABLED_EXTENSIONS,"Reload enabled extensions","エクステンションをリロードする (Reload enabled extensions)"
+ACTION_TOGGLE_CONTROLLER_NAV,"Toggle controller navigation","ゲームパッドナビ切り替え (Toggle controller navigation)"
+ACTION_SEEK_FORWARD_1,"Forward 1 second","次のフレームへ (Forward 1 second)"
+ACTION_SEEK_BACKWARD_1,"Backward 1 second","前のフレームへ (Backward 1 second)"
+ACTION_ADD_ACTION_CONTROLLER,"Add action","位置データ追加 (Add action)"
+ACTION_TOGGLE_RECORDING_MODE,"Toggle recording mode","録画モード切替 (Toggle recording mode)"
+ACTION_CONTROLLER_SELECT,"Controller selection","ゲームパッドでデータ選択 (Controller selection)"
+ACTION_SET_PLAYBACK_SPEED,"Set current playback speed","現在の再生速度を設定する (Set current playback speed)"
+PASSIVE_GROUP_TIMELINE,"Point timeline",位置データのポイントをマウスで操作
+PASSIVE_GROUP_SIMULATOR,Simulator,シミュレーター（グッズの状態プレビュー）
+MOD_MOVE_OR_ADD_POINT,"Click drag/add point in the timeline",このキーを押しながら
+クリック/位置データ追加
+ドラッグ/位置データを移動
+MOD_CLICK_SIM_ADD_PONT,"Click simulator to add a point",このキーを押しながら
+シミュレーター（グッズの位置プレビュー）を
+クリックした時、位置データを追加する
+PROJECT_HAS_UNSAVED_EDITS,"Project has unsaved edits",プロジェクトに保存していない編集があります
+UNSAVED_EDITS_MSG,"The current project has unsaved edits.",今のプロジェクトには保存していない編集があります
+UNSAVED_CHANGES,"Unsaved changes",更新を保存していません
+UNSAVED_CHANGES_MSG,"Do you want to save and exit?",更新を保存して終了しますか？
+いいえで保存せずに終了します
+FILE_NOT_FOUND,"File not found",ファイルが見つかりません
+COULDNT_FIND_FILE,"Couldn’t find file",ファイルが見つかりません開けません
+OFS_FAILED_TO_IMPORT,"OpenFunscripter failed to import.",インポート失敗
+OFS_FAILED_TO_IMPORT_MSG,"Failed to import",動画のインポートに失敗しました
+FAILED_TO_LOAD,"Failed to load",読み込みに失敗しました
+FAILED_TO_LOAD_MSG,"The project failed to load.",このプロジェクトは読み込ません
+FAILED_TO_FIND_VIDEO,"Failed to find video",動画ファイルが見つかりません
+FAILED_TO_FIND_VIDEO_MSG,"The video was not found.
+Please pick the correct video.",動画ファイルが見つかりませんでした
+プロジェクトメニューの動画ファイルを変更で設定してください
+CHOOSE_OUTPUT_DIR,"Choose output directory",出力フォルダを選択
+PICK_DIFFERENT_MEDIA,"Pick different media",動画ファイルを変更
+FILE,File,ファイル
+OPEN_PROJECT,"Open project",プロジェクトを開く
+SAVE,Save,保存
+CLOSE_PROJECT,"Close project",プロジェクトを閉じる
+WRONG_FILE,"Wrong file",不正なファイル
+WRONG_FILE_MSG,"The file isn’t a project file.",このファイルはプロジェクトファイルではありません
+IMPORT_VIDEO_SCRIPT,"Import video/script","インポート 動画/スクリプト"
+RECENT_FILES,"Recent files",最近開いたファイル
+NO_RECENT_FILES,"No recent files",最近開いたファイルはありません
+SAVE_PROJECT,"Save project",プロジェクトを上書き保存
+EXPORT_MENU,Export...,エクスポート
+QUICK_EXPORT,"Quick export",クィックエクスポート
+QUICK_EXPORT_TOOLTIP,"Exports all scripts as .funscript in their default paths.",同じフォルダに動画ファイル名.funscriptでスクリプトファイルを出力します
+EXPORT_ACTIVE_SCRIPT,"Export active script",現在のスクリプトをエクスポート
+EXPORT_AS_UFOTW_SCRIPT,"Export as UFOTW script",UFOTWスクリプトとしてエクスポート
+EXPORT_ALL,"Export all",全てエクスポート
+AUTO_BACKUP_TIMER_FMT,"Auto Backup in %d seconds","自動保存まで後 %d 秒"
+AUTO_BACKUP,"Auto Backup",自動保存を行う
+OPEN_BACKUP_DIR,"Open backup directory",バックアップフォルダを開く
+CONFIGURE,Configure,コンフィグ（動画ファイル、スクリプトファイル設定）
+ADD_MENU,Add...,スクリプトを追加
+ADD_SHORTCUTS,Shortcuts,ショートカット
+ADD_NEW,"Add new",新規スクリプト作成
+ADD_NEW_FUNSCRIPT,"Add new funscript",新規スクリプト作成
+ADD_EXISTING,"Add existing",既存スクリプトを追加
+ADD_EXISTING_FUNSCRIPTS,"Add existing funscripts",既存スクリプトを追加
+REMOVE_SCRIPT_CONFIRM_MSG,"If the script wasn’t previously exported, this can’t be reverted.
+Continue?",このスクリプトをエクスポート済みで無い場合、元に戻す事はできません
+削除しますか？
+REMOVE,Remove,削除
+REMOVE_SCRIPT,"Remove script",スクリプトを削除
+EDIT,Edit,編集
+SAVE_FRAME_AS_IMAGE,"Save frame as image",動画のスクリーンショットを保存する
+OPEN_SCREENSHOT_DIR,"Open screenshot directory",スクリーンショットフォルダを開く
+SAVE_HEATMAP,"Save heatmap",ヒートマップ画像を保存
+UNDO,Undo,アンドゥ
+REDO,Redo,リドゥ
+CUT,Cut,切り取り
+PASTE,Paste,貼り付け
+SELECT,Select,選択
+SELECT_ALL,"Select all",全て選択
+DESELECT_ALL,"Deselect all",選択解除
+SPECIAL,Special,特殊選択
+SELECT_ALL_LEFT,"Select all left",現在地から左を全て選択
+SELECT_ALL_RIGHT,"Select all right",現在地から右を全て選択
+SET_SELECTION_START,"Set selection start",この位置から選択
+SET_SELECTION_END,"Set selection end",この位置まで選択
+TOP_POINTS_ONLY,"Top points only",現在の選択から高い値のみ選択
+MID_POINTS_ONLY,"Mid points only",現在の選択から中間値のみ選択
+BOTTOM_POINTS_ONLY,"Bottom points only",現在の選択から低い値のみ選択
+BOOKMARKS,Bookmarks,ブックマーク
+EXPORT_CLIP,"Export clip","エクスポート クリップ"
+NAME,Name,名前
+ADD_BOOKMARK,"Add bookmark",ブックマーク追加
+CREATE_INTERVAL_FOR_FMT,"Create interval for ""%s""",今の位置に"%s"の終端ブックマークを作成する
+GO_TO_MENU,"Go to...",移動
+NO_BOOKMARKS,"No bookmarks",ブックマークがありません
+ALWAYS_SHOW_LABELS,"Always show labels",ブックマークラベルを常に表示
+DELETE_ALL_BOOKMARKS,"Delete all bookmarks",全てのブックマークを削除
+VIEW_MENU,View,表示
+METADATA,Metadata,メタデータ
+DRAW_VIDEO,"Draw video",動画表示
+RESET_VIDEO_POS,"Reset video position",動画の表示位置をリセット
+VIDEO_MODE,"Video mode",動画モード
+VIDEO_MODE_FULL,Full,フル
+VIDEO_MODE_LEFT_PANE,"Left pane","左半分のみ表示 SideBySide動画"
+VIDEO_MODE_RIGHT_PANE,"Right pane","右半分のみ表示 SideBySide動画"
+VIDEO_MODE_TOP_PANE,"Top pane","上半分のみ表示 OverUnder動画"
+VIDEO_MODE_BOTTOM_PANE,"Bottom pane","下半分のみ表示 OverUnder動画"
+VIDEO_MODE_VR,VR,"魚眼表示 VR動画"
+DEBUG,Debug,デバッグ
+METRICS,Metrics,Metrics
+LOG_OUTPUT,"Log output","Log output"
+FULLSCREEN,Fullscreen,フルスクリーン
+PREFERENCES,Preferences,設定
+REPEAT_RATE,"Repeat rate",ボタンリピート倍率
+CONTROLLER_CONNECTED,"Controller connected!",ゲームパッド接続済！
+EXTENSIONS_MENU,Extensions,エクステンション
+DEV_MODE,"Developer mode",開発者モード
+SHOW_LOGS,"Show logs",ログ表示
+DEV_MODE_TOOLTIP,"Enable extra functionality for extension developement.",エクステンション開発のための機能を有効にする
+EXTENSION_DIR,"Extension directory",エクステンションフォルダを開く
+ENABLED,Enabled,有効
+SHOW_WINDOW,"Show window",ウィンドウ表示
+OPEN_DIRECTORY,"Open directory",フォルダを開く
+NAVIGATION,Navigation,Navigation
+SCRIPTING,Scripting,スクリプト編集
+UNSAVED_CHANGES_FMT,"unsaved changes %d minutes ago",%d分の間、更新を保存していません
+METADATA_EDITOR,"Metadata editor",メタデータ編集
+TITLE,Title,タイトル
+DURATION,Duration,長さ
+CREATOR,Creator,作者
+URL,Url,URL
+VIDEO_URL,"Video url",動画URL
+NOTES,Notes,備考
+LICENSE,License,ライセンス
+FREE,Free,無料
+PAID,Paid,有料
+NONE,None,無し
+TAGS,Tags,タグ
+ADD,Add,追加
+PERFORMERS,Performers,出演者
+SAVE_TEMPLATE,"Save template",テンプレートとして保存
+SAVE_TEMPLATE_TOOLTIP,"Saves all current values as defaults for later.",現在の設定をテンプレートとして保存して初期設定するようにします
+GIT_COMMIT,Commit,Commit
+INTERVAL,Interval,インターバル
+CLOSE_WITHOUT_SAVING,"Close without saving?",更新を保存せずに閉じても良いですか？
+CLOSE_WITHOUT_SAVING_MSG,"Do you want to save the current project?",このプロジェクトの更新を保存していません
+保存せずにプロジェクトを閉じますか？
+CONFIGURATION,Configuration,プレビューの設定
+RESET,Reset,リセット
+MOVE,Move,Move
+DISTANCE,Distance,Distance
+GLOBAL_YAW,"Global yaw","Global yaw"
+GLOBAL_PITCH,"Global pitch","Global pitch"
+BOX,Box,Box
+CONTAINER,Container,Container
+TWIST,Twist,Twist
+ROLL_DEG,"Roll deg","Roll deg"
+PITCH_DEG,"Pitch deg","Pitch deg"
+TWIST_DEG,"Twist deg","Twist deg"
+ROLL,Roll,Roll
+PITCH,Pitch,Pitch
+YAW,Yaw,Yaw
+INSERT_CURRENT_POSITION,"Insert current position","Insert current position"
+SCROLL_PERCENT,"Scroll (%)","Scroll (%)"
+SCROLL_PERCENT_TOOLTIP,"You can use the mousewheel on the sliders above.","You can use the mousewheel on the sliders above."
+EXTENSION_LOG_OUTPUT,"Extension log output",エクステンションのログを出力
+ERROR_STR,Error,エラー
+TRY_RELOADING,"Try reloading",リロードを試して下さい
+RELOAD,Reload,リロード
+BPM,BPM,BPM
+OFFSET,Offset,Offset
+SNAP,Snap,Snap
+UNKNOWN_ERROR,"unknown error",不明なエラー
+FFMPEG_WAS_NOT_FOUND_MSG,"ffmpeg.exe was not found.
+Do you want to download it?",ffmpeg.exeが見つかりませんでした
+ダウンロードしますか？
+BINDABLE_FUNCTIONS,"Bindable functions","Bindable functions"
+YES,Yes,Yes
+FFMPEG_FAILED_TO_DOWNLOAD_MSG,"Failed to download from https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip",https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
+のダウンロードに失敗しました。
+DONE,Done,成功
+DONE_MSG,"ffmpeg.exe was successfully extracted.",ffmpeg.exeの解凍に成功しました
+EXTRACT_FAIL,"Failed to extract ffmpeg.exe.",ffmpeg.exeの解凍に失敗しました
+EXTRACT_FAIL_MSG,"Extracting uses tar.exe.
+It will fail if it's not on your system.",解凍にはtar.exeを使用します
+あなたのシステムにない場合は失敗します
+DOWNLOAD_FFMPEG,"Download ffmpeg?",ffmpegをダウンロードしますか？
+TEMPO_WHOLE_MEASURES,"whole measures",テンポ分割数
+TEMPO_2ND_MEASURES,"2nd measures",2分割
+TEMPO_4TH_MEASURES,"4th measures",4分割
+TEMPO_8TH_MEASURES,"8th measures",8分割
+TEMPO_12TH_MEASURES,"12th measures",12分割
+TEMPO_16TH_MEASURES,"16th measures",16分割
+TEMPO_24TH_MEASURES,"24th measures",24分割
+TEMPO_32ND_MEASURES,"32nd measures",32分割
+TEMPO_48TH_MEASURES,"48th measures",48分割
+TEMPO_64TH_MEASURES,"64th measures",64分割
+LOAD_CONFIG,"Load config",設定読み込み
+SAVE_CONFIG,"Save config",設定を保存
+SAVE_SIMULATOR_CONFIG,"Save simulator configuration",シミュレーター（プレビュー）設定の保存
+SAVE_SIMULATOR_CONFIG_MSG,"Do you want do save the current config?
+This will override any existing default config.",現在のシミュレーター（プレビュー）設定を保存しますか？
+保存すると、デフォルトの設定を上書きします
+LINES,Lines,Lines
+TEXT,Text,Text
+FRONT,Front,Front
+BACK,Back,Back
+BORDER,Border,Border
+INDICATOR,Indicator,Indicator
+LINE,Line,Line
+WIDTH,Width,Width
+OPACITY,Opacity,Opacity
+EXTRA_LINES,"Extra lines","Extra lines"
+VANILLA,Vanilla,標準表示
+SHOW_POSITION,"Show position",グッズの位置を数字表示
+VANILLA_TOOLTIP,"The original simulator from day one.",最初期のオリジナルシミュレーター表示に戻す
+RESET_TO_DEFAULTS,"Reset to defaults",標準に戻す
+SIMULATOR,Simulator,シミュレーター（グッズの状態プレビュー）
+APPLICATION,Application,アプリケーション
+DARK_MODE,"Dark mode",ダークモード
+LIGHT_MODE,"Light mode",ライトモード
+PREFERENCES_TXT,"Higher frame rate makes OFS feel ""snappier"" because input gets processed more frequently.",フレームレートを高くすると、入力の処理頻度が高くなるため、
+OpenFunScripterが「キビキビ」しているように感じられます
+VSYNC,Vsync,Vsync
+VSYNC_TOOLTIP,"Limits frame rate to the refresh rate of the monitor.
+Frame limit is ignored.",フレームレートをモニターのリフレッシュレートに制限します
+フレームリミットは無視されます
+FRAME_LIMIT,"Frame limit",フレームレート制限
+FRAME_LIMIT_TOOLTIP,"This limits the frame rate OFS is running at.",OpenFunScripterのフレームレートを制限します
+FONT,Font,フォント
+CHANGE,Change,変更
+CHOOSE_FONT,"Choose font",フォント選択
+DEFAULT_FONT,"Default font",標準のフォント
+FONT_SIZE,"Font size",フォントサイズ
+FORCE_HW_DECODING,"Force hardware decoding (Requires program restart)","動画再生を強制的にハードウェアデコードにする （プログラムの再起動が必要）"
+FORCE_HW_DECODING_TOOLTIP,"May cause crashes on some systems.",一部のシステムでクラッシュする可能性があります
+FAST_FRAME_STEP,"Fast frame step",ファストステップの移動量
+FAST_FRAME_STEP_TOOLTIP,"Amount of frames to skip with fast step.","ファストステップ、ファストバックをした時の
+移動するフレーム数
+※標準では以下の操作で実行
+ファストステップ Ctrl+Right
+ファストバック Crtl+Left"
+SHOW_METADATA_DIALOG_ON_NEW_PROJECT,"Show metadata dialog on new project",新規プロジェクト作成時、メタデータ編集ダイアログを表示する
+FUNCTIONS_RANGE_EXTENDER,"Range extender",レンジエクステンダー（位置データ拡縮）
+FUNCTIONS_SIMPLIFY,"Simplify (Ramer-Douglas-Peucker)","シンプリファイ (簡易化)"
+RANGE,Range,変化量
+RANGE_EXTENDER_TXT,"Select atleast 5 actions to extend.",拡縮したい5個以上の位置データを選択してください
+EPSILON,Epsilon,変化量
+SIMPLIFY_TXT,"Select atleast 5 actions to simplify.",簡易化したい5個以上の位置データを選択してください
+SPECIAL_FUNCTIONS,"Special functions",関数（位置データに変更を加える）
+MEMORY_USAGE,"Memory usage",メモリ使用量
+UPDATE,Update,Update
+SLOWEST,slowest,slowest
+LANGUAGE,Language,言語
+ACTION_RELOAD_TRANSLATION,"Reload current translation",言語ファイルを読み直す
+DIRECTORY,Directory,Directory
+HIGHLIGHT_TRESHOLD,"Highlight treshold",指定速度
+ENABLE_MAX_SPEED_HIGHLIGHT,"Max speed highlight",指定速度以上の動きをハイライト表示する
+FPS_OVERRIDE,"FPS override",FPSオーバーライド
+TIME_SPENT,"Time spent",経過時間
+SHOW_ACTION_LINES,"Show lines",動きのラインを表示
+SHOW_ACTION_POINTS,"Show points",動きデータの点を表示
+CLEAR_RECENT_FILES,"Clear recent files",最近開いたファイル一覧をクリアする
+GENERIC_OPEN,Open...,開く...
+ADD_EDIT_TRIGGER,"Add/Edit trigger","ショートカットキーを追加/編集 "
+VALIDATE,Validate,正当性をチェック
+OK_RESULT,ok,ok
+ORPHAN_TRIGGER_MESSAGE,"The following triggers have no corresponding actions.",指定のキーに設定されている動作は存在しません
+（アップデートやプラグイン削除などで失われています）
+DELETE,Delete,削除
+REPEAT,Repeat,リピートストローク
+WEBSOCKET_API,"Websocket API","Websocket API"
+SERVER_ACTIVE,"Server active","Server active"
+CLIENT_COUNT,"Clients connected","Clients connected"
+START,Start,Start
+END,End,終了
+TOTAL,Total,Total
+REMOVE_CHAPTER,"Remove chapter",チャプター設定削除
+REMOVE_CHAPTER_MSG,"Do you want to remove the chapter?",このチャプター設定を削除しますか？
+REMOVE_BOOKMARK,"Remove bookmark",ブックマーク削除
+REMOVE_BOOKMARK_MSG,"Do you want to remove the bookmark?",このブックマークを削除しますか？
+ADD_NEW_CHAPTER,"Add chapter",チャプターを追加
+ADD_NEW_BOOKMARK,"Add bookmark",ブックマークを追加
+SET_CHAPTER_SIZE,"Set size",チャプターの長さを現在位置までに設定する
+SAVE_HEATMAP_WITH_CHAPTERS,"Save heatmap with chapters",チャプター画像とヒートマップ画像を保存
+CHAPTERS,Chapters,チャプターリスト
+CHAPTER,Chapter,チャプター
+BEGIN,Begin,開始
+CHAPTER_BINDING_GROUP,Chapters,チャプター、ブックマーク操作
+ACTION_CREATE_BOOKMARK,"Create bookmark",ブックマーク作成
+ACTION_CREATE_CHAPTER,"Create chapter",チャプター作成
