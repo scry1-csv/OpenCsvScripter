@@ -30,5 +30,14 @@ Currently using: [mpv-dev-x86_64-v3-20220925-git-56e24d5.7z (it's part of the re
 I'm providing windows binaries.
 In theory linux or OSX should work as well but I lack the environment to set any of that up.
 
+## Version history
+
+### 2025/02/14 - v0.0.2
+- The configuration directory was changed from being shared with OpenFunscripter to being a directory dedicated to OpenCsvScripter
+- Japanese language files are included by default
+
+### 2025/02/09 - v0.0.1
+- First release
+
 ## License
 GPLv3
